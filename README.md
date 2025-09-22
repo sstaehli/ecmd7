@@ -118,4 +118,4 @@ graph TD
         USB[USB-C for Debug] --> MCU
         BLE[Optional BLE/WiFi (ESP32)] --> MCU
     end
-
+```
