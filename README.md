@@ -99,23 +99,23 @@
 ```mermaid
 graph TD
     Power[Battery Input<br>12V–48V] --> PowerStage
-    PowerStage[TMC6200 + MOSFETs<br>3-Phase Inverter] --> Motor[PMSM Motor]
+    PowerStage["TMC6200 + MOSFETs<br>3-Phase Inverter"] --> Motor["PMSM Motor"]
     
-    PowerStage -->|Phase Currents| CurrentSense[Current Sensors<br>(INA240 / shunt)]
-    PowerStage -->|Phase Voltages| VoltageSense[Voltage Dividers]
+    PowerStage -->|Phase Currents| CurrentSense["Current Sensors<br>(INA240 / shunt)"]
+    PowerStage -->|Phase Voltages| VoltageSense["Voltage Dividers"]
 
-    Encoder[Absolute Encoder<br>(BiSS-C / ABZ / SPI)] --> EncoderIF[Encoder Interface]
-    EncoderIF --> FPGA[FPGA Board<br>(Arty A7 / Zybo Z7)]
+    Encoder["Absolute Encoder<br>(BiSS-C / ABZ / SPI)"] --> EncoderIF["Encoder Interface"]
+    EncoderIF --> FPGA["FPGA Board<br>(Arty A7 / Zybo Z7)"]
 
     CurrentSense --> FPGA
     VoltageSense --> FPGA
 
-    FPGA -->|PWM / SPI| TMC6200[TMC6200 Gate Driver]
-    FPGA -->|PMOD / GPIO| Connector[PMOD / Logic I/O]
+    FPGA -->|PWM / SPI| TMC6200["TMC6200 Gate Driver"]
+    FPGA -->|PMOD / GPIO| Connector["PMOD / Logic I/O"]
 
     subgraph Optional
-        MCU[Optional MCU (STM32/RP2040)] --> FPGA
-        USB[USB-C for Debug] --> MCU
-        BLE[Optional BLE/WiFi (ESP32)] --> MCU
+        MCU["Optional MCU (STM32/RP2040)"] --> FPGA
+        USB["USB-C for Debug"] --> MCU
+        BLE["Optional BLE/WiFi (ESP32)"] --> MCU
     end
 ```
