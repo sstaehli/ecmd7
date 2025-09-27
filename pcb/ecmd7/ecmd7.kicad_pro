@@ -431,6 +431,10 @@
     [
       "98f24844-b8e7-48f1-8251-9b0fee32cc67",
       "ADC"
+    ],
+    [
+      "e44dd957-a36e-490a-a8ea-b8cfeb77f6f6",
+      "Supply"
     ]
   ],
   "text_variables": {}

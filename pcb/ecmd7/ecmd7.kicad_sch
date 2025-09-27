@@ -89,6 +89,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 110.49 46.99)
+		(size 22.86 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e44dd957-a36e-490a-a8ea-b8cfeb77f6f6")
+		(property "Sheetname" "Supply"
+			(at 110.49 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Supply.kicad_sch"
+			(at 110.49 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ecmd7"
+				(path "/e730e626-b0ba-4026-9c00-58e2460691fe"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

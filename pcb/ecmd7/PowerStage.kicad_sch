@@ -2349,6 +2349,16 @@
 	)
 	(wire
 		(pts
+			(xy 290.83 171.45) (xy 300.99 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c5ca15-f324-425f-8a37-ca5d566fbde9")
+	)
+	(wire
+		(pts
 			(xy 137.16 54.61) (xy 137.16 57.15)
 		)
 		(stroke
@@ -2469,7 +2479,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 72.39) (xy 308.61 76.2)
+			(xy 308.61 73.66) (xy 308.61 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2539,7 +2549,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 113.03) (xy 308.61 114.3)
+			(xy 308.61 113.03) (xy 308.61 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2609,7 +2619,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 170.18) (xy 283.21 170.18)
+			(xy 251.46 171.45) (xy 283.21 171.45)
 		)
 		(stroke
 			(width 0)
@@ -2739,7 +2749,7 @@
 	)
 	(wire
 		(pts
-			(xy 290.83 67.31) (xy 300.99 67.31)
+			(xy 290.83 68.58) (xy 300.99 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2879,7 +2889,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 67.31) (xy 283.21 67.31)
+			(xy 256.54 68.58) (xy 283.21 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2916,6 +2926,16 @@
 			(type default)
 		)
 		(uuid "879b9d9e-6921-4237-812e-f8aab062875e")
+	)
+	(wire
+		(pts
+			(xy 290.83 120.65) (xy 300.99 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881dec7a-47c3-4d6a-babf-6d305c2917f6")
 	)
 	(wire
 		(pts
@@ -2989,7 +3009,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 67.31) (xy 256.54 102.87)
+			(xy 256.54 68.58) (xy 256.54 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3089,7 +3109,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 133.35) (xy 251.46 170.18)
+			(xy 251.46 133.35) (xy 251.46 171.45)
 		)
 		(stroke
 			(width 0)
@@ -3159,17 +3179,7 @@
 	)
 	(wire
 		(pts
-			(xy 290.83 119.38) (xy 300.99 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a70de629-eed3-4f14-8e5b-11d429a28b6f")
-	)
-	(wire
-		(pts
-			(xy 308.61 124.46) (xy 308.61 128.27)
+			(xy 308.61 125.73) (xy 308.61 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3179,7 +3189,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 163.83) (xy 308.61 165.1)
+			(xy 308.61 163.83) (xy 308.61 166.37)
 		)
 		(stroke
 			(width 0)
@@ -3196,16 +3206,6 @@
 			(type default)
 		)
 		(uuid "b05be8aa-0d68-4194-815f-3fc6677db174")
-	)
-	(wire
-		(pts
-			(xy 290.83 170.18) (xy 300.99 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1400d69-3e25-4a55-bbd4-5e49245bbb2e")
 	)
 	(wire
 		(pts
@@ -3249,7 +3249,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 119.38) (xy 265.43 118.11)
+			(xy 265.43 120.65) (xy 265.43 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3319,7 +3319,7 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 119.38) (xy 283.21 119.38)
+			(xy 265.43 120.65) (xy 283.21 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3399,7 +3399,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 175.26) (xy 308.61 179.07)
+			(xy 308.61 176.53) (xy 308.61 179.07)
 		)
 		(stroke
 			(width 0)
@@ -3509,7 +3509,7 @@
 	)
 	(wire
 		(pts
-			(xy 308.61 60.96) (xy 308.61 62.23)
+			(xy 308.61 60.96) (xy 308.61 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3599,7 +3599,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 287.02 67.31 90)
+		(at 287.02 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3607,7 +3607,7 @@
 		(dnp no)
 		(uuid "08151750-14aa-45e6-9307-a2b251d59d28")
 		(property "Reference" "R2"
-			(at 285.496 65.024 90)
+			(at 285.496 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3615,7 +3615,7 @@
 			)
 		)
 		(property "Value" "0.47"
-			(at 286.512 69.596 90)
+			(at 286.512 70.866 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3623,7 +3623,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 287.02 69.088 90)
+			(at 287.02 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3632,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 67.31 0)
+			(at 287.02 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3641,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 287.02 67.31 0)
+			(at 287.02 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4000,7 +4000,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRFS4115")
-		(at 306.07 67.31 0)
+		(at 306.07 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4009,7 +4009,7 @@
 		(fields_autoplaced yes)
 		(uuid "1315f02e-51f9-4759-bb21-2605a5aabd6e")
 		(property "Reference" "Q2"
-			(at 312.42 66.0399 0)
+			(at 312.42 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4018,7 +4018,7 @@
 			)
 		)
 		(property "Value" "IRFS3806"
-			(at 312.42 68.5799 0)
+			(at 312.42 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4027,7 +4027,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 311.15 69.215 0)
+			(at 311.15 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4038,7 +4038,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfs3806-datasheet-en.pdf"
-			(at 311.15 71.12 0)
+			(at 311.15 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +4048,7 @@
 			)
 		)
 		(property "Description" "43A Id, 60V Vds, 12.6mOhm Rds, N-Channel HEXFET Power MOSFET, D2PAK"
-			(at 306.07 67.31 0)
+			(at 306.07 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +4885,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 287.02 170.18 90)
+		(at 287.02 171.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4893,7 +4893,7 @@
 		(dnp no)
 		(uuid "3ab2853f-d154-49e5-bfe5-87affed5143f")
 		(property "Reference" "R7"
-			(at 285.496 167.894 90)
+			(at 285.496 169.164 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +4901,7 @@
 			)
 		)
 		(property "Value" "0.47"
-			(at 286.512 172.466 90)
+			(at 286.512 173.736 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4909,7 +4909,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 287.02 171.958 90)
+			(at 287.02 173.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +4918,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 170.18 0)
+			(at 287.02 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,7 +4927,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 287.02 170.18 0)
+			(at 287.02 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,7 +5021,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRFS4115")
-		(at 306.07 170.18 0)
+		(at 306.07 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5030,7 +5030,7 @@
 		(fields_autoplaced yes)
 		(uuid "40660cd4-5b8e-40d2-9e94-4eee9860d02e")
 		(property "Reference" "Q6"
-			(at 312.42 168.9099 0)
+			(at 312.42 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5039,7 +5039,7 @@
 			)
 		)
 		(property "Value" "IRFS3806"
-			(at 312.42 171.4499 0)
+			(at 312.42 172.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,7 +5048,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 311.15 172.085 0)
+			(at 311.15 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5059,7 +5059,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfs3806-datasheet-en.pdf"
-			(at 311.15 173.99 0)
+			(at 311.15 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5069,7 +5069,7 @@
 			)
 		)
 		(property "Description" "43A Id, 60V Vds, 12.6mOhm Rds, N-Channel HEXFET Power MOSFET, D2PAK"
-			(at 306.07 170.18 0)
+			(at 306.07 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5443,7 +5443,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRFS4115")
-		(at 306.07 119.38 0)
+		(at 306.07 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5452,7 +5452,7 @@
 		(fields_autoplaced yes)
 		(uuid "72f16729-cc6b-4dd4-962d-b07d7a9abc66")
 		(property "Reference" "Q4"
-			(at 312.42 118.1099 0)
+			(at 312.42 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5461,7 +5461,7 @@
 			)
 		)
 		(property "Value" "IRFS3806"
-			(at 312.42 120.6499 0)
+			(at 312.42 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5470,7 +5470,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 311.15 121.285 0)
+			(at 311.15 122.555 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,7 +5481,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfs3806-datasheet-en.pdf"
-			(at 311.15 123.19 0)
+			(at 311.15 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5491,7 +5491,7 @@
 			)
 		)
 		(property "Description" "43A Id, 60V Vds, 12.6mOhm Rds, N-Channel HEXFET Power MOSFET, D2PAK"
-			(at 306.07 119.38 0)
+			(at 306.07 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7321,7 +7321,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 287.02 119.38 90)
+		(at 287.02 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7329,7 +7329,7 @@
 		(dnp no)
 		(uuid "c6132430-0f20-435c-9c1b-ebc804b72874")
 		(property "Reference" "R4"
-			(at 285.496 117.094 90)
+			(at 285.496 118.364 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7337,7 +7337,7 @@
 			)
 		)
 		(property "Value" "0.47"
-			(at 286.512 121.666 90)
+			(at 286.512 122.936 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7345,7 +7345,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 287.02 121.158 90)
+			(at 287.02 122.428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7354,7 +7354,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 287.02 119.38 0)
+			(at 287.02 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,7 +7363,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 287.02 119.38 0)
+			(at 287.02 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
