@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e730e626-b0ba-4026-9c00-58e2460691fe")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 64.77 45.72)
+		(size 21.59 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "98f24844-b8e7-48f1-8251-9b0fee32cc67")
+		(property "Sheetname" "ADC"
+			(at 64.77 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC.kicad_sch"
+			(at 64.77 62.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ecmd7"
+				(path "/e730e626-b0ba-4026-9c00-58e2460691fe"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 45.72)
+		(size 15.24 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cb54a646-6f0e-4ebd-bca9-0b6549682c31")
+		(property "Sheetname" "PowerStage (page 2)"
+			(at 29.21 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerStage.kicad_sch"
+			(at 29.21 62.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ecmd7"
+				(path "/e730e626-b0ba-4026-9c00-58e2460691fe"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
