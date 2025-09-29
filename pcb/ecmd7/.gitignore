@@ -2,4 +2,5 @@
 \#auto_saved_files\#
 *.lck
 *-cache
+*.kicad_*-bak
 
