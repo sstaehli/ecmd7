@@ -425,16 +425,8 @@
       "Root"
     ],
     [
-      "cb54a646-6f0e-4ebd-bca9-0b6549682c31",
-      "PowerStage (page 2)"
-    ],
-    [
       "98f24844-b8e7-48f1-8251-9b0fee32cc67",
-      "ADC"
-    ],
-    [
-      "e44dd957-a36e-490a-a8ea-b8cfeb77f6f6",
-      "Supply"
+      "Feedback"
     ]
   ],
   "text_variables": {}
