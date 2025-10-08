@@ -1,0 +1,77 @@
+{
+  "last_sch_text_sim_command": "",
+  "tabs": [
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 100 25 25k",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "fixedY1scale": {
+        "max": 0.0,
+        "min": -20.0
+      },
+      "fixedY2scale": {
+        "max": 0.0,
+        "min": -90.0
+      },
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/Feedback/VWLP) (phase)",
+          "trace_type": 517
+        },
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/Feedback/VWLP) (gain)",
+          "trace_type": 521
+        }
+      ]
+    },
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 100n 10m 0 100n uic",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/Feedback/VW)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/Feedback/VWLP)",
+          "trace_type": 257
+        }
+      ]
+    }
+  ],
+  "user_defined_signals": [],
+  "version": 6
+}
