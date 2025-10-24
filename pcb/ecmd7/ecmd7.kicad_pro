@@ -478,7 +478,32 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "GNDPWR": [
+        "20A"
+      ],
+      "Net-(JU1-Pin_1)": [
+        "20A"
+      ],
+      "Net-(JV1-Pin_1)": [
+        "20A"
+      ],
+      "Net-(JW1-Pin_1)": [
+        "20A"
+      ],
+      "Net-(Q1-S)": [
+        "20A"
+      ],
+      "Net-(Q3-S)": [
+        "20A"
+      ],
+      "Net-(Q5-S)": [
+        "20A"
+      ],
+      "VMot": [
+        "20A"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -684,6 +709,10 @@
     [
       "98f24844-b8e7-48f1-8251-9b0fee32cc67",
       "ADC+IO"
+    ],
+    [
+      "da8b1e93-5d51-40db-83cb-e313b5e0b1d9",
+      "Power Suppy"
     ]
   ],
   "text_variables": {}
