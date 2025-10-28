@@ -868,100 +868,478 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:0"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+		(symbol "SSTA:FIN1002M5X"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#GND"
-				(at 0 -5.08 0)
+			(property "Reference" "U"
+				(at 4.826 4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
+				)
+			)
+			(property "Value" "FIN1002M5X"
+				(at 5.08 -10.922 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 24.13 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Value" "0"
-				(at 0 -2.54 0)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FIN1002-D.pdf"
+				(at 24.13 -194.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-				(at 0 -10.16 0)
+			(property "Description" "1-bit LVDS reciever, >400 Mbit/s"
+				(at 5.08 -13.716 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Description" "0V reference potential for simulation"
-				(at 0 -7.62 0)
+			(property "Height" "1.45"
+				(at 24.13 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
+			(property "Mouser Part Number" "512-FIN1002M5X"
+				(at 24.13 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(symbol "0_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 -1.27) (xy 1.27 0) (xy -1.27 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FIN1002M5X?qs=kvVQGybKvwAF4DtbNzX2kg%3D%3D"
+				(at 24.13 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "onsemi"
+				(at 24.13 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "FIN1002M5X"
+				(at 24.13 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "FIN1002M5X_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 22.86 -10.16)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "0_1_1"
-				(pin power_in line
+				(pin passive line
 					(at 0 0 0)
-					(length 0)
-					(name "~"
+					(length 5.08)
+					(name "VCC"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "RIN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "RIN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -2.54 180)
+					(length 5.08)
+					(name "ROUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SSTA:MCP33151-05T-E_MN"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 7.62 3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MCP33151-05T-E/MN"
+				(at 7.366 -14.478 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "SSTA:TDFN10_MN_MCH"
+				(at 7.62 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP3315141-Data-Sheet-DS20006220.pdf"
+				(at 7.874 -21.336 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "500kS/s-1MS/s single channel ADC"
+				(at 7.62 -16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "MCP33151-05T-E/MN"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TDFN10_MN_MCH TDFN10_MN_MCH-M TDFN10_MN_MCH-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP33151-05T-E_MN_0_1"
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "DVIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "CNVST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -5.08 180)
+					(length 7.62)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -7.62 180)
+					(length 7.62)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 -10.16 180)
+					(length 7.62)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP33151-05T-E_MN_1_1"
+				(rectangle
+					(start 7.62 2.54)
+					(end 33.02 -12.7)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "AIN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "AIN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -1445,489 +1823,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ssta_symbols:FIN1002M5X"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 4.826 4.318 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FIN1002M5X"
-				(at 5.08 -10.922 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 24.13 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FIN1002-D.pdf"
-				(at 24.13 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Greater than 400Mbs data rate; 3.3V power supply operation; Meets or exceeds the TIA/EIA-644 LVDS standard; 0.4ns maximum pulse skew; Power-Off over voltage tolerant input and output; Fail safe protection for open-circuit and non-driven, shorted or terminated conditions; Bus pin ESD (HBM) protection exceeds 10kV; High impedance output at VCC < 1.5V; 2.5ns maximum propagation delay; 5-Lead SOT23 package saves space"
-				(at 13.462 -13.208 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.45"
-				(at 24.13 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "512-FIN1002M5X"
-				(at 24.13 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FIN1002M5X?qs=kvVQGybKvwAF4DtbNzX2kg%3D%3D"
-				(at 24.13 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "onsemi"
-				(at 24.13 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "FIN1002M5X"
-				(at 24.13 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "FIN1002M5X_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 22.86 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "RIN+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "RIN-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -2.54 180)
-					(length 5.08)
-					(name "ROUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "ssta_symbols:MCP33151-05T-E_MN"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 7.62 3.81 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "MCP33151-05T-E/MN"
-				(at 7.366 -14.478 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "TDFN10_MN_MCH"
-				(at 14.986 -18.796 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "MCP33151-05T-E/MN"
-				(at 18.288 -16.764 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "MCP33151-05T-E/MN"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TDFN10_MN_MCH TDFN10_MN_MCH-M TDFN10_MN_MCH-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP33151-05T-E_MN_0_1"
-				(pin power_in line
-					(at 0 0 0)
-					(length 7.62)
-					(name "VREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "AIN+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "AIN-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "DVIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 -2.54 180)
-					(length 7.62)
-					(name "CNVST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 -5.08 180)
-					(length 7.62)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 40.64 -7.62 180)
-					(length 7.62)
-					(name "SCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 40.64 -10.16 180)
-					(length 7.62)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "MCP33151-05T-E_MN_1_1"
-				(rectangle
-					(start 7.62 2.54)
-					(end 33.02 -12.7)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "BISS-C (RS422) Interface"
 		(exclude_from_sim no)
@@ -2384,16 +2279,6 @@
 			(type default)
 		)
 		(uuid "0623c219-c6e3-4433-bbf2-6707e2c48edd")
-	)
-	(wire
-		(pts
-			(xy 284.48 269.24) (xy 284.48 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "068ce025-9b6e-49d4-a250-dbb1405959f3")
 	)
 	(wire
 		(pts
@@ -3127,16 +3012,6 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 270.51) (xy 279.4 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "473faf16-fd15-4f5e-b0d2-5b2bf677fb0d")
-	)
-	(wire
-		(pts
 			(xy 66.04 176.53) (xy 66.04 173.99)
 		)
 		(stroke
@@ -3184,6 +3059,16 @@
 			(type default)
 		)
 		(uuid "492d6afe-a186-4317-a083-4edc4e7ce9ba")
+	)
+	(wire
+		(pts
+			(xy 372.11 63.5) (xy 372.11 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "497e50fb-3da6-4e03-9e1e-bfbea206e83f")
 	)
 	(wire
 		(pts
@@ -3507,16 +3392,6 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 269.24) (xy 284.48 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6973cfee-74b5-4639-84db-50371fa22131")
-	)
-	(wire
-		(pts
 			(xy 309.88 52.07) (xy 342.9 52.07)
 		)
 		(stroke
@@ -3524,16 +3399,6 @@
 			(type default)
 		)
 		(uuid "69c715d1-3c61-41c3-9251-808497efc958")
-	)
-	(wire
-		(pts
-			(xy 372.11 63.5) (xy 372.11 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69cc89b9-4c94-4125-a443-018303d5f501")
 	)
 	(wire
 		(pts
@@ -6061,7 +5926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 350.52 215.9 0)
 			(effects
 				(font
@@ -7205,7 +7070,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 334.01 215.9 0)
 			(effects
 				(font
@@ -7566,10 +7431,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:FIN1002M5X")
+		(lib_id "SSTA:FIN1002M5X")
 		(at 123.19 52.07 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -7611,12 +7476,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Greater than 400Mbs data rate; 3.3V power supply operation; Meets or exceeds the TIA/EIA-644 LVDS standard; 0.4ns maximum pulse skew; Power-Off over voltage tolerant input and output; Fail safe protection for open-circuit and non-driven, shorted or terminated conditions; Bus pin ESD (HBM) protection exceeds 10kV; High impedance output at VCC < 1.5V; 2.5ns maximum propagation delay; 5-Lead SOT23 package saves space"
-			(at 136.652 65.278 0)
+		(property "Description" "1-bit LVDS reciever, >400 Mbit/s"
+			(at 128.27 65.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -8896,7 +8762,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 350.52 209.55 0)
 			(effects
 				(font
@@ -9068,10 +8934,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:FIN1002M5X")
+		(lib_id "SSTA:FIN1002M5X")
 		(at 123.19 165.1 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -9113,12 +8979,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Greater than 400Mbs data rate; 3.3V power supply operation; Meets or exceeds the TIA/EIA-644 LVDS standard; 0.4ns maximum pulse skew; Power-Off over voltage tolerant input and output; Fail safe protection for open-circuit and non-driven, shorted or terminated conditions; Bus pin ESD (HBM) protection exceeds 10kV; High impedance output at VCC < 1.5V; 2.5ns maximum propagation delay; 5-Lead SOT23 package saves space"
-			(at 136.652 178.308 0)
+		(property "Description" "1-bit LVDS reciever, >400 Mbit/s"
+			(at 128.27 178.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -9258,72 +9125,6 @@
 			(project "ecmd7"
 				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/98f24844-b8e7-48f1-8251-9b0fee32cc67"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 279.4 270.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "546eb254-0407-41cb-b5b5-7bf7f8db9a99")
-		(property "Reference" "#PWR069"
-			(at 279.4 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 279.4 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 279.4 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 279.4 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 279.4 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f873a5d-3ffc-42d2-9a61-f84204f2b4e8")
-		)
-		(instances
-			(project "ecmd7"
-				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/98f24844-b8e7-48f1-8251-9b0fee32cc67"
-					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -9801,10 +9602,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:MCP33151-05T-E_MN")
+		(lib_id "SSTA:MCP33151-05T-E_MN")
 		(at 269.24 41.91 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -9826,32 +9627,35 @@
 				)
 			)
 		)
-		(property "Footprint" "sst_footprints:TDFN10_MN_MCH"
-			(at 284.226 60.706 0)
+		(property "Footprint" "SSTA:TDFN10_MN_MCH"
+			(at 276.86 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MCP33151-05T-E/MN"
-			(at 287.528 58.674 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP3315141-Data-Sheet-DS20006220.pdf"
+			(at 277.114 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 269.24 41.91 0)
+		(property "Description" "500kS/s-1MS/s single channel ADC"
+			(at 276.86 58.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10167,7 +9971,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6caa45a6-3e11-44ef-921e-783bdc1e85c4")
 		(property "Reference" "#PWR09"
 			(at 266.7 41.91 0)
@@ -10179,7 +9982,7 @@
 			)
 		)
 		(property "Value" "+5VA"
-			(at 266.7 33.02 0)
+			(at 266.7 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11044,10 +10847,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:FIN1002M5X")
+		(lib_id "SSTA:FIN1002M5X")
 		(at 123.19 109.22 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -11059,7 +10862,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "FIN1002M5X"
@@ -11090,12 +10892,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Greater than 400Mbs data rate; 3.3V power supply operation; Meets or exceeds the TIA/EIA-644 LVDS standard; 0.4ns maximum pulse skew; Power-Off over voltage tolerant input and output; Fail safe protection for open-circuit and non-driven, shorted or terminated conditions; Bus pin ESD (HBM) protection exceeds 10kV; High impedance output at VCC < 1.5V; 2.5ns maximum propagation delay; 5-Lead SOT23 package saves space"
-			(at 136.652 122.428 0)
+		(property "Description" "1-bit LVDS reciever, >400 Mbit/s"
+			(at 128.27 122.936 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -11356,7 +11159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RS-485, RS-422 full duplex 12 Mbps transceiver, SOIC-8"
 			(at 334.01 198.12 0)
 			(effects
 				(font
@@ -11604,72 +11407,6 @@
 			(project "ecmd7"
 				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/98f24844-b8e7-48f1-8251-9b0fee32cc67"
 					(reference "#PWR0167")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:0")
-		(at 284.48 271.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b20ac63-8d70-4a71-9b58-275cf5838bb5")
-		(property "Reference" "#GND02"
-			(at 284.48 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 284.48 269.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 284.48 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-			(at 284.48 281.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0V reference potential for simulation"
-			(at 284.48 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "faa9d25e-8f9c-41e5-a984-666c552f91dd")
-		)
-		(instances
-			(project "ecmd7"
-				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/98f24844-b8e7-48f1-8251-9b0fee32cc67"
-					(reference "#GND02")
 					(unit 1)
 				)
 			)
@@ -12156,7 +11893,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a09c0945-2c6c-45d9-81be-05fc4e0e8ad3")
 		(property "Reference" "#PWR011"
 			(at 261.62 41.91 0)
@@ -12168,7 +11904,7 @@
 			)
 		)
 		(property "Value" "+1V8A"
-			(at 261.62 33.02 0)
+			(at 261.366 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13242,10 +12978,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:MCP33151-05T-E_MN")
+		(lib_id "SSTA:MCP33151-05T-E_MN")
 		(at 269.24 64.77 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -13267,32 +13003,35 @@
 				)
 			)
 		)
-		(property "Footprint" "sst_footprints:TDFN10_MN_MCH"
-			(at 284.226 83.566 0)
+		(property "Footprint" "SSTA:TDFN10_MN_MCH"
+			(at 276.86 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MCP33151-05T-E/MN"
-			(at 287.528 81.534 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP3315141-Data-Sheet-DS20006220.pdf"
+			(at 277.114 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 269.24 64.77 0)
+		(property "Description" "500kS/s-1MS/s single channel ADC"
+			(at 276.86 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -13932,10 +13671,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:MCP33151-05T-E_MN")
+		(lib_id "SSTA:MCP33151-05T-E_MN")
 		(at 269.24 129.54 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -13957,32 +13696,35 @@
 				)
 			)
 		)
-		(property "Footprint" "sst_footprints:TDFN10_MN_MCH"
-			(at 284.226 148.336 0)
+		(property "Footprint" "SSTA:TDFN10_MN_MCH"
+			(at 276.86 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MCP33151-05T-E/MN"
-			(at 287.528 146.304 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP3315141-Data-Sheet-DS20006220.pdf"
+			(at 277.114 150.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 269.24 129.54 0)
+		(property "Description" "500kS/s-1MS/s single channel ADC"
+			(at 276.86 146.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -14273,7 +14015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 334.01 180.34 0)
 			(effects
 				(font
@@ -15170,10 +14912,10 @@
 		)
 	)
 	(symbol
-		(lib_id "ssta_symbols:MCP33151-05T-E_MN")
+		(lib_id "SSTA:MCP33151-05T-E_MN")
 		(at 269.24 87.63 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -15195,32 +14937,35 @@
 				)
 			)
 		)
-		(property "Footprint" "sst_footprints:TDFN10_MN_MCH"
-			(at 284.226 106.426 0)
+		(property "Footprint" "SSTA:TDFN10_MN_MCH"
+			(at 276.86 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "MCP33151-05T-E/MN"
-			(at 287.528 104.394 0)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP3315141-Data-Sheet-DS20006220.pdf"
+			(at 277.114 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 269.24 87.63 0)
+		(property "Description" "500kS/s-1MS/s single channel ADC"
+			(at 276.86 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -15440,7 +15185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 350.52 180.34 0)
 			(effects
 				(font
