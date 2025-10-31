@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [],
@@ -536,6 +536,15 @@
       "Net-(Q5-S)": [
         "20A"
       ],
+      "Net-(U2-AIN+)": [
+        "Analog"
+      ],
+      "Net-(U4-AIN+)": [
+        "Analog"
+      ],
+      "Net-(U5-AIN+)": [
+        "Analog"
+      ],
       "Net-(U7-AIN+)": [
         "Analog"
       ],
@@ -544,6 +553,9 @@
       ],
       "VMot": [
         "20A"
+      ],
+      "unconnected-(U6-NC-Pad4)": [
+        "Analog"
       ]
     },
     "netclass_patterns": []

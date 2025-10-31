@@ -6368,7 +6368,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 219.71 125.73) (xy 255.27 125.73) (xy 255.27 149.86) (xy 219.71 149.86)
+				(xy 215.9 30.48) (xy 284.48 30.48) (xy 284.48 156.21) (xy 223.52 156.21) (xy 223.52 107.95) (xy 215.9 107.95)
 			)
 			(stroke
 				(width 0)
@@ -6383,7 +6383,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 219.71 125.73 0)
+		(at 215.9 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6392,7 +6392,7 @@
 		)
 		(uuid "901cd1ba-7441-493d-aefc-3b1d6d760e69")
 		(property "Netclass" "Analog"
-			(at 219.71 121.666 90)
+			(at 215.9 26.416 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6401,7 +6401,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 57.15 549.91 90)
+			(at 53.34 454.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
