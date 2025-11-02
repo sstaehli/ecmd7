@@ -48,11 +48,130 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.3
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|60000000|101430000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|f9cd1461-fe23-4e3b-b3e4-25885b63e87e",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|103970000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|2f8fa5f9-125d-4e7e-a41b-f82b6de9b366",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|106510000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|89181b98-d721-4743-befa-70c0833e2392",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|109050000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|d04c32fd-aca6-4987-b124-f7fe49cee13d",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|111590000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|7a7b806e-0c29-4f5c-9a92-0db90da154fe",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|114240000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|cf64c680-feb0-4ab7-a2b9-7e1242f08dd0",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|54060000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|fbf20613-994d-40a2-bae7-64ed648e9a53",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|56710000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|11c7de37-bf5e-45f4-beb4-392d11706263",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|59250000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|82802b07-2d1b-44ec-a733-454cfb0d9a74",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|61790000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|b1486211-161d-4e10-8d83-dce21631b165",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|64330000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|4b9d20cf-2191-48a2-aa41-4655e29e233e",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|66870000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|0a2a391b-68d5-4d67-a3d6-d2f0e00ede6d",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|69520000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|bcf19598-8490-4ac5-be9f-b9dcbca5bd80",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|76280000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|c94b6421-c660-4c6f-ae70-eac821c68849",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|78930000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|14125891-cd52-42c2-b881-8dc3293a87e1",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|81470000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|c568a431-26d4-4ca2-9a6f-4e686b2d409b",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|84010000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|fcce2072-477a-4843-9eaa-4e0423cdd188",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|86550000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|18bec540-b2d0-4d74-8e16-239665370308",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|89090000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|1318e618-7b9a-4e34-87d6-8b979287022c",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|91740000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|f332d453-f98a-4258-b3ad-78aefd8dc023",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60000000|98780000|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|120fd1ef-dea3-4cec-8126-7193f164afd3",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60011666|114584819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|99a11569-275b-4304-8810-d262a1517c46",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60011666|69864819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|11e4370f-6eda-4e5c-9fca-7fb1838eee34",
+          ""
+        ],
+        [
+          "silk_edge_clearance|60011666|92084819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|5b071503-2598-41bf-90f5-b09b7442644e",
+          ""
+        ],
+        [
+          "starved_thermal|114137500|74000000|1d360667-0fdd-4fec-a49e-b3d4831d631c|413ee049-ee6d-4465-87d3-48ed0909fc1e|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|116975000|55470000|d72ae5b5-2b25-4711-b182-224caa398ac6|6fe4bca7-bff3-4ced-9a38-406af1804af5|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|121422194|80517144|1d360667-0fdd-4fec-a49e-b3d4831d631c|13b9033f-142b-48c2-8f86-c6ab0f0332da|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|83470000|58025000|d72ae5b5-2b25-4711-b182-224caa398ac6|669eb2f3-f0b0-403f-bdba-47456172593c|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -117,7 +236,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -130,9 +249,9 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -180,7 +299,13 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.25,
+        0.6,
+        1.0,
+        5.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +332,16 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -457,7 +591,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -468,21 +602,29 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "name": "20A",
+        "name": "40A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
-        "schematic_color": "rgb(255, 0, 0)"
+        "schematic_color": "rgb(255, 0, 0)",
+        "track_width": 10.0
+      },
+      {
+        "clearance": 0.2,
+        "name": "60V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(132, 0, 0)"
       },
       {
         "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgb(194, 0, 194)"
       }
     ],
@@ -503,8 +645,13 @@
       "GNDA": [
         "Analog"
       ],
+      "GNDMOT": [
+        "40A",
+        "60V"
+      ],
       "GNDPWR": [
-        "20A"
+        "40A",
+        "60V"
       ],
       "I_U": [
         "Analog"
@@ -519,22 +666,67 @@
         "Analog"
       ],
       "Net-(JU1-Pin_1)": [
-        "20A"
+        "40A",
+        "60V"
       ],
       "Net-(JV1-Pin_1)": [
-        "20A"
+        "40A",
+        "60V"
       ],
       "Net-(JW1-Pin_1)": [
-        "20A"
+        "40A",
+        "60V"
+      ],
+      "Net-(NTSU1-Pad2)": [
+        "60V"
+      ],
+      "Net-(NTSV1-Pad1)": [
+        "60V"
+      ],
+      "Net-(NTSW1-Pad1)": [
+        "60V"
+      ],
+      "Net-(Q1-G)": [
+        "40A",
+        "60V"
       ],
       "Net-(Q1-S)": [
-        "20A"
+        "40A",
+        "60V"
+      ],
+      "Net-(Q2-G)": [
+        "40A",
+        "60V"
+      ],
+      "Net-(Q3-G)": [
+        "40A",
+        "60V"
       ],
       "Net-(Q3-S)": [
-        "20A"
+        "40A",
+        "60V"
+      ],
+      "Net-(Q4-G)": [
+        "40A",
+        "60V"
+      ],
+      "Net-(Q5-G)": [
+        "40A",
+        "60V"
       ],
       "Net-(Q5-S)": [
-        "20A"
+        "40A",
+        "60V"
+      ],
+      "Net-(Q6-G)": [
+        "40A",
+        "60V"
+      ],
+      "Net-(U1-V)": [
+        "60V"
+      ],
+      "Net-(U1-W)": [
+        "60V"
       ],
       "Net-(U2-AIN+)": [
         "Analog"
@@ -551,8 +743,12 @@
       "Net-(U7-AIN-)": [
         "Analog"
       ],
+      "VDrv": [
+        "60V"
+      ],
       "VMot": [
-        "20A"
+        "40A",
+        "60V"
       ],
       "unconnected-(U6-NC-Pad4)": [
         "Analog"
