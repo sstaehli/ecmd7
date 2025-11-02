@@ -144,18 +144,6 @@
           ""
         ],
         [
-          "silk_edge_clearance|60011666|114584819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|99a11569-275b-4304-8810-d262a1517c46",
-          ""
-        ],
-        [
-          "silk_edge_clearance|60011666|69864819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|11e4370f-6eda-4e5c-9fca-7fb1838eee34",
-          ""
-        ],
-        [
-          "silk_edge_clearance|60011666|92084819|9e6b350b-948e-4f09-a8f2-5ea900b7ccb0|5b071503-2598-41bf-90f5-b09b7442644e",
-          ""
-        ],
-        [
           "starved_thermal|114137500|74000000|1d360667-0fdd-4fec-a49e-b3d4831d631c|413ee049-ee6d-4465-87d3-48ed0909fc1e|F.Cu",
           ""
         ],
@@ -900,7 +888,7 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,

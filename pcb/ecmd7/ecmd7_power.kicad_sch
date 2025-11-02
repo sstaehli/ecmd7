@@ -305,174 +305,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Schottky"
 			(pin_numbers
 				(hide yes)
@@ -1019,6 +851,173 @@
 				)
 			)
 			(symbol "BZV55B3V6_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:LL4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LL4148"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_MiniMELF"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/85557/ll4148.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, MiniMELF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*MiniMELF*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LL4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LL4148_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -7078,6 +7077,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 163.83 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c38d473c-6a03-4188-b5a3-b28a044d62b5")
 		)
@@ -7148,6 +7156,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 58.42 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "99653905-d7cd-4e0a-9db6-00a06728588b")
 		)
@@ -7209,6 +7226,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 66.04 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 66.04 156.21 0)
 			(effects
 				(font
@@ -7548,6 +7574,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 143.51 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5726ff7f-cb37-44da-99d1-41352354a79d")
 		)
@@ -7609,6 +7644,15 @@
 			)
 		)
 		(property "Description" "Wide Voltage Range Buck-Boost Controller, HTSSOP-20"
+			(at 105.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 105.41 137.16 0)
 			(effects
 				(font
@@ -7939,6 +7983,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 337.82 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "60cdb0a6-5afa-4c3b-8c8d-f7322f3f8c56")
 		)
@@ -8038,7 +8091,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "10u"
 			(at 307.34 199.39 90)
 			(effects
 				(font
@@ -8066,6 +8119,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 307.34 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 307.34 201.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8274,6 +8336,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 201.93 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "079520c9-3d86-48c1-822d-c48a80871d18")
 		)
@@ -8410,6 +8481,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 331.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "92107d5d-6c0f-48ba-a8b8-26c63de0e59f")
 		)
@@ -8478,6 +8558,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 220.98 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d5f78519-9cf2-4972-9db6-d7d1af29e009")
 		)
@@ -8538,6 +8627,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 143.51 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 143.51 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8680,6 +8778,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 80.01 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4ab718f2-2de2-4a9e-bfcd-0c603deadd97")
 		)
@@ -8813,6 +8920,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 180.34 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0ce8cce-0ba1-49c9-867b-c3b5d2fd76e6")
 		)
@@ -8883,6 +8999,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5978c937-6ee3-4316-a475-6b48078af231")
 		)
@@ -8943,6 +9068,15 @@
 			)
 		)
 		(property "Description" "150mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5"
+			(at 373.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 373.38 209.55 0)
 			(effects
 				(font
@@ -9085,6 +9219,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 275.59 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 275.59 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9292,6 +9435,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 90.17 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d094236e-c833-4931-a7be-7252913ee4cc")
 		)
@@ -9361,6 +9513,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 50.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b15b18c7-e1f6-44ec-a58b-c18dc803f363")
 		)
@@ -9421,6 +9582,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 234.95 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 234.95 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9628,6 +9798,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 360.68 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1b7f25a8-195e-4d85-ac07-adc2f80faa11")
 		)
@@ -9688,6 +9867,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 220.98 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 220.98 200.66 0)
 			(effects
 				(font
@@ -9831,6 +10019,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 50.8 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "40943079-8085-4d59-90c9-f32b369a7d84")
 		)
@@ -9893,6 +10090,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 242.57 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 242.57 156.21 0)
 			(effects
 				(font
@@ -9969,6 +10175,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 220.98 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "25b55f36-3cff-4440-ac6f-7e67096bcdb3")
 		)
@@ -10029,6 +10244,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 173.99 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 173.99 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10103,6 +10327,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 281.94 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e4241b99-817c-4195-a53a-40eeee8bec2f")
 		)
@@ -10163,6 +10396,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 180.34 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 180.34 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10335,7 +10577,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1u/25V"
 			(at 349.25 216.154 0)
 			(effects
 				(font
@@ -10363,6 +10605,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 347.98 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 347.98 213.36 0)
 			(effects
 				(font
@@ -10636,6 +10887,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 166.37 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7abe2eb0-a38a-4077-b818-36ab6dacbef6")
 		)
@@ -10696,6 +10956,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 143.51 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 143.51 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10770,6 +11039,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 143.51 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b7bca1c-138b-480a-be97-b3c99875769c")
 		)
@@ -10832,6 +11110,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 90.17 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 90.17 227.33 0)
 			(effects
 				(font
@@ -10973,6 +11260,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 234.95 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecc49eca-aaa6-4048-b435-ff6d7ccee845")
 		)
@@ -11033,6 +11329,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 156.21 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 156.21 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11167,6 +11472,15 @@
 		)
 		(property "Description" "Schottky diode"
 			(at 194.31 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 194.31 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11434,6 +11748,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 50.8 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 50.8 120.65 0)
 			(effects
 				(font
@@ -11838,6 +12161,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 345.44 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2b4dbf49-861b-471d-bee7-5405e27ddd6d")
 		)
@@ -11898,6 +12230,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 208.28 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 208.28 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12041,6 +12382,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 58.42 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a637e196-9450-4723-b0af-b722c412f093")
 		)
@@ -12074,7 +12424,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1u/25V"
 			(at 361.95 159.004 0)
 			(effects
 				(font
@@ -12102,6 +12452,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 360.68 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 360.68 156.21 0)
 			(effects
 				(font
@@ -12309,6 +12668,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 220.98 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0f440763-9141-41e5-8d4c-de1662a56a7e")
 		)
@@ -12373,6 +12741,15 @@
 			)
 		)
 		(property "Description" "60A Id, 100V Vds, OptiMOS N-Channel Power MOSFET, 9.8mOhm Ron, Qg (typ) 22.0nC, PG-TDSON-8"
+			(at 212.09 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 212.09 144.78 0)
 			(effects
 				(font
@@ -12452,6 +12829,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 80.01 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 80.01 191.77 0)
 			(effects
 				(font
@@ -12615,10 +13001,9 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8b48f375-0b47-4cb3-8c7e-559e227412a4")
 		(property "Reference" "JP3"
-			(at 271.78 138.4299 90)
+			(at 271.272 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12626,14 +13011,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 266.7 137.1601 90)
+		(property "Value" "INT"
+			(at 274.32 139.446 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
@@ -12656,6 +13040,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 269.24 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 269.24 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12686,7 +13079,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8bfc8512-ce19-413a-bca4-b16fbf7e03fb")
 		(property "Reference" "JP9"
 			(at 367.03 130.81 0)
@@ -12696,14 +13088,13 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 365.7601 137.16 90)
+		(property "Value" "INT"
+			(at 368.554 137.414 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
@@ -12725,6 +13116,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 367.03 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 367.03 134.62 0)
 			(effects
 				(font
@@ -12920,6 +13320,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 293.37 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "dc0ab611-b1b6-4434-a91b-1f6253b6c960")
 		)
@@ -12942,92 +13351,6 @@
 			(project "ecmd7"
 				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/da8b1e93-5d51-40db-83cb-e313b5e0b1d9"
 					(reference "U9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 344.17 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "910efe35-1fde-4fdb-90b7-3861ba2b5069")
-		(property "Reference" "D8"
-			(at 344.17 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 344.17 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
-			(at 344.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 344.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
-			(at 344.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 344.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 344.17 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "396ff430-2b98-40d9-8917-4495c3797e30")
-		)
-		(pin "2"
-			(uuid "dd48a4be-60b6-4e93-89c1-31cf4969e6c2")
-		)
-		(instances
-			(project "ecmd7"
-				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/da8b1e93-5d51-40db-83cb-e313b5e0b1d9"
-					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -13151,6 +13474,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 208.28 200.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "17b66007-282a-46d3-8ceb-2804f78c9264")
 		)
@@ -13215,6 +13547,15 @@
 			)
 		)
 		(property "Description" "60A Id, 100V Vds, OptiMOS N-Channel Power MOSFET, 9.8mOhm Ron, Qg (typ) 22.0nC, PG-TDSON-8"
+			(at 199.39 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 199.39 190.5 0)
 			(effects
 				(font
@@ -13293,6 +13634,15 @@
 			)
 		)
 		(property "Description" "Wide Voltage Range Buck-Boost Controller, HTSSOP-20"
+			(at 105.41 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 105.41 208.28 0)
 			(effects
 				(font
@@ -13562,6 +13912,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 212.09 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "29e39660-f202-4337-a574-c00b1e3952c7")
 		)
@@ -13633,6 +13992,15 @@
 		)
 		(property "Description" "3.6V, 500mW, 2%, Zener diode, MiniMELF"
 			(at 384.81 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 384.81 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13776,6 +14144,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 339.09 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5cda696d-98ba-4113-ac8d-e0a6097220ef")
 		)
@@ -13838,6 +14215,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 50.8 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 50.8 191.77 0)
 			(effects
 				(font
@@ -13974,6 +14360,15 @@
 		)
 		(property "Description" "Schottky diode"
 			(at 201.93 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 201.93 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14314,6 +14709,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 73.66 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42c4a8ee-14b4-4392-960f-ca64e28895f9")
 		)
@@ -14375,6 +14779,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 66.04 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 66.04 227.33 0)
 			(effects
 				(font
@@ -14519,6 +14932,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 242.57 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7d0b3c5e-d95e-4872-9d97-22743dab4d25")
 		)
@@ -14581,6 +15003,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 201.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 201.93 227.33 0)
 			(effects
 				(font
@@ -14722,6 +15153,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 133.35 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cb7d42d8-c377-42f1-9281-0996fe139d49")
 		)
@@ -14822,14 +15262,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "EXT"
 			(at 284.48 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
@@ -14852,6 +15291,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 281.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 281.94 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14919,6 +15367,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 227.33 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 227.33 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15008,6 +15465,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:LL4148")
+		(at 344.17 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c52d2f63-2f26-4fb5-b65e-9596fd6276fa")
+		(property "Reference" "D23"
+			(at 344.17 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LL4148"
+			(at 344.17 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_MiniMELF"
+			(at 344.17 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85557/ll4148.pdf"
+			(at 344.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, MiniMELF"
+			(at 344.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 344.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 344.17 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3732d3ef-7853-465b-9275-5dcb470d27dd")
+		)
+		(pin "2"
+			(uuid "931b1dd1-064f-41c6-9d8c-0954dd67d69b")
+		)
+		(instances
+			(project ""
+				(path "/e730e626-b0ba-4026-9c00-58e2460691fe/da8b1e93-5d51-40db-83cb-e313b5e0b1d9"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 133.35 152.4 90)
 		(unit 1)
@@ -15052,6 +15595,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 133.35 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15120,6 +15672,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 73.66 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 73.66 156.21 0)
 			(effects
 				(font
@@ -15198,6 +15759,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 201.93 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "513444db-8a1b-4914-b8e6-ed23a756d7c0")
 		)
@@ -15260,6 +15830,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 74.93 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 74.93 83.82 0)
 			(effects
 				(font
@@ -15337,6 +15916,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 81.28 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "08c65ad6-be4b-4c98-9b47-9e9cca210ab1")
 		)
@@ -15398,6 +15986,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 81.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 81.28 156.21 0)
 			(effects
 				(font
@@ -15935,6 +16532,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 57.15 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "62a7a359-536d-4b4f-abe9-928d1510552d")
 		)
@@ -16136,6 +16742,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 331.47 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45226def-c829-4152-85a3-f3defd1a4c62")
 		)
@@ -16198,6 +16813,15 @@
 		)
 		(property "Description" "Schottky diode"
 			(at 194.31 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 194.31 209.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16277,6 +16901,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 199.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "58f304b4-184e-4c92-996d-71b0710a6fe3")
 		)
@@ -16346,6 +16979,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 227.33 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 227.33 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16545,6 +17187,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 156.21 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 156.21 226.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
