@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ .Title }}</title>
-</head>
-<body>
-    <h1>{{ .Title }}</h1>
+{{ define "main" }}
+<section>
+  <article>
+  {{ .Content }}
+  </article>
 
-    <div>
-        {{ .Content }}
-    </div>
-
-    <h2>Content</h2>
-    <ul>
-        {{ range .Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-    </ul>
-</body>
-</html>
+  <ul class="toc">
+    {{ range .Pages }}
+      <li>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

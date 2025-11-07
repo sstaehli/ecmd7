@@ -1,0 +1,100 @@
+/* Minimal light/dark mode CSS for Hugo */
+
+:root {
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-accent: #0066cc;
+  --color-muted: #666666;
+  --color-border: #dddddd;
+  --max-width: 60ch;
+  --space: 1rem;
+  --line-height: 1.6;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f0f0f;
+    --color-text: #eaeaea;
+    --color-accent: #4da3ff;
+    --color-muted: #999999;
+    --color-border: #333333;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: var(--space);
+  max-width: var(--max-width);
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+p, ul, ol, blockquote {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+/* Elements */
+blockquote {
+  border-left: 3px solid var(--color-border);
+  padding-left: 1em;
+  color: var(--color-muted);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+pre, code {
+  font-family: var(--font-mono);
+  background: var(--color-border);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Footer */
+footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: var(--color-muted);
+  text-align: center;
+}
