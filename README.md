@@ -1,5 +1,5 @@
 # ECMD7
 
-3-Phase Power Converter Hardware for Motor Drive Experiments
+3-Phase Power Converter Hardware for Motor Drive Experiments.
 
-See also [Requirements](doc/hw-requirements.md)
+Check the [documentation pages](https://gitlab-pages.airhead.ch/products/arnimatic/ecmd7/) for more info.

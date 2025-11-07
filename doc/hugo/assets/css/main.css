@@ -22,6 +22,9 @@
     --color-muted: #999999;
     --color-border: #333333;
   }
+  thead th {
+    background: #2b6fa3; /* slightly darker accent in dark mode */
+  }
 }
 
 html {
@@ -110,6 +113,34 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Tables */
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  margin-bottom: 1rem;
+}
+
+thead th {
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 1px solid #e6e6e6;
+}
+
+tbody td {
+  border: 1px solid #e6e6e6;
+  padding: 0.5rem 0.75rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafafa;
 }
 
 pre, code {
