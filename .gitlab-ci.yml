@@ -8,7 +8,7 @@ variables:
 
 build_hw:
   stage: build
-  image: ghcr.io/kicad/kicad-ci:8.0   # Official KiCad Docker image with CLI tools
+  image: kicad/kicad:9.0   # Official KiCad Docker image with CLI tools
   variables:
     kicad_cli: kicad-cli
     OUTPUT_DIR: "$CI_PROJECT_DIR/${PROJECT_NAME}-hw-out"
