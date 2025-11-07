@@ -53,7 +53,7 @@ pages:
     - mkdir -p doc/hugo/static/files/
     - mv "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf" doc/hugo/static/files/schematic.pdf
     - mv "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf" doc/hugo/static/files/assembly.pdf
-    - mv "${OUTPUT_DIR}/render/$(PROJECT_NAME)_2d.png" doc/hugo/static/files/2d.png
+    - mv "${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png" doc/hugo/static/files/2d.png
     - mv "${OUTPUT_DIR}/render/${PROJECT_NAME}_3d.png" doc/hugo/static/files/3d.png
     - cd doc/hugo
     - hugo --minify --baseURL ${CI_PAGES_URL}
