@@ -1,8 +1,6 @@
 ---
-title: "KiCad Schematic"
+title: "ECMD7 Hardware"
 ---
-
-# KiCad Schematic
 
 Below is the latest schematic exported from KiCad:
 
