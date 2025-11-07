@@ -1,0 +1,29 @@
+{{ if or .Params.mermaid .Site.Params.mermaid }}
+
+  <!-- Mermaid (client-side) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Convert fenced code blocks (pre > code.language-mermaid) into div.mermaid
+      document.querySelectorAll('pre > code.language-mermaid').forEach(function (codeBlock) {
+        var pre = codeBlock.parentElement;
+        var container = document.createElement('div');
+        container.className = 'mermaid';
+        // keep original code text
+        container.textContent = codeBlock.textContent;
+        pre.parentNode.replaceChild(container, pre);
+      });
+
+      if (window.mermaid) {
+        try {
+          // securityLevel 'loose' allows more characters inside diagrams; change if you need stricter sanitization
+          mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
+        } catch (e) {
+          console.warn('Mermaid init error:', e);
+        }
+      }
+    });
+  </script>
+
+{{ end }}

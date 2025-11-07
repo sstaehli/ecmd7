@@ -1,2 +1,5 @@
 title = 'ECMD7'
 languageCode = 'en-us'
+[params]
+    math = true
+    mermaid = true

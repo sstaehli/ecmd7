@@ -6,12 +6,22 @@
       <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> | {{ .Title }}</h1>
     </header>
 
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
+    <div class="content-grid">
+      <aside class="toc" aria-label="Table of contents">
+        {{ partial "nav.html" . }}
+      </aside>
+
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
 
     <footer>
       <p>&copy; {{ now.Format "2006" }} S. Stähli</p>
     </footer>
+
+    {{ partial "math.html" . }}
+    {{ partial "mermaid.html" . }}
+    
   </body>
 </html>

@@ -8,8 +8,8 @@
   --color-accent: #0066cc;
   --color-muted: #666666;
   --color-border: #dddddd;
-  --max-width: 60ch;
-  --space: 1rem;
+  --max-width: 1200px;
+  --space: 0.75rem;
   --line-height: 1.6;
 }
 
@@ -43,6 +43,38 @@ body {
   color: var(--color-text);
   transition: background 0.3s ease, color 0.3s ease;
 }
+
+/* Folder-based hierarchical navigation */
+
+.site-nav {
+  margin-bottom: 2rem;
+}
+
+.menu, .submenu {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu > li {
+  margin-bottom: 0.5rem;
+}
+
+.submenu {
+  margin-left: 1rem;
+  border-left: 1px solid var(--color-border);
+  padding-left: 0.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menu a:hover {
+  color: var(--color-accent);
+}
+
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -97,4 +129,67 @@ footer {
   font-size: 0.9em;
   color: var(--color-muted);
   text-align: center;
+}
+
+/* Content grid: mobile-first (stacked), switches to 30/70 on wider screens */
+.content-grid {
+  display: block;
+  gap: 0.75rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content-grid .toc {
+  margin-bottom: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+/* Sidebar / hamburger behavior */
+#nav-toggle {
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.sidebar {
+  display: none; /* hidden on small screens by default */
+}
+
+.sidebar.open {
+  display: block;
+}
+
+
+
+@media (min-width: 900px) {
+  .content-grid {
+    display: grid;
+    /* fixed comfortable nav width, main gets all remaining space */
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+    max-width: 100%; /* allow grid to expand to container */
+  }
+
+  .content-grid .toc {
+    position: sticky;
+    top: calc(var(--space) + 1rem);
+    padding-right: 1rem;
+    border-right: 1px solid var(--color-border);
+  }
+
+  .content-grid main {
+    padding-left: 0.5rem;
+  }
+
+  /* On wide screens the sidebar is always visible; hide the toggle */
+  #nav-toggle {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+  }
 }

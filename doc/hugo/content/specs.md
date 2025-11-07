@@ -1,8 +1,8 @@
 ---
 title: "Requirements"
+weight: 10
+math: true
 ---
-
-# User Requirements
 
 ## 1. Overview
 
@@ -71,7 +71,7 @@ The design shall mechanically fit directly to Digilent Arty A7 or Zybo Z7 develo
   - PWM (3 or 6)
   - SPI (TMC6200, encoders)
   - Encoder signals (ABZ, BiSS-C, etc.)
-- Compatible with:
+  - Compatible with:
   - **Arty A7**
   - **Zybo Z7**
   - **Intel Vidor 4000** (via adapter)

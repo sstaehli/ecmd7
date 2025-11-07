@@ -1,15 +1,5 @@
 {{ define "main" }}
-<section>
-  <article>
+<article>
   {{ .Content }}
-  </article>
-
-  <ul class="toc">
-    {{ range .Pages }}
-      <li>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      </li>
-    {{ end }}
-  </ul>
-</section>
+</article>
 {{ end }}

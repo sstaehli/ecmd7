@@ -1,3 +1,7 @@
 ---
-title: "ECMD7 - Electronic Controlled Motor Drive"
+title: "Home"
+math: true
 ---
+
+$ 1 + 2 = 1_{Spass} $
+

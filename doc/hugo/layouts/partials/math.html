@@ -1,0 +1,44 @@
+{{ if or .Params.math .Site.Params.math }}
+
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+        integrity="sha384-nR1kRzOhl+dTVS8XtWkB9vuGb+Tj9M5MnVz9i6sPRH4GhUy+QzYOLUrj7WzwlE7P"
+        crossorigin="anonymous">
+
+  <!-- KaTeX JS and auto-render extension -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+  <!--
+    Invoke renderMathInElement once KaTeX auto-render is available.
+    We poll because some environments (minifiers or strict CSP) may remove onload handlers
+    or defer execution; polling ensures the function is called when ready.
+  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tries = 0;
+      function tryRender() {
+        tries += 1;
+        if (window.renderMathInElement) {
+          try {
+            renderMathInElement(document.body, {
+              delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+              ],
+              throwOnError: false
+            });
+          } catch (e) {
+            // swallow errors to avoid breaking the page
+            console.warn('KaTeX render error:', e);
+          }
+        } else if (tries < 100) {
+          // retry for up to ~5 seconds (100 * 50ms)
+          setTimeout(tryRender, 50);
+        }
+      }
+      tryRender();
+    });
+  </script>
+{{ end }}
