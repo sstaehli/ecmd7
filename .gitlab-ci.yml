@@ -1,0 +1,36 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  PROJECT_NAME: "ecmd7"
+
+build_hw:
+  stage: build
+  image: ghcr.io/kicad/kicad-ci:8.0   # Official KiCad Docker image with CLI tools
+  variables:
+    kicad_cli: kicad-cli
+    OUTPUT_DIR: "$CI_PROJECT_DIR/${PROJECT_NAME}-hw-out"
+  script:
+    make -C kicad schematic_pdf
+  artifacts:
+    paths:
+      - $OUTPUT_DIR/
+    expire_in: 1 week
+
+deploy_doc:
+  image: registry.gitlab.com/pages/hugo:latest
+  stage: deploy
+  script:
+    - mkdir -p doc/hugo/static/files/
+    - mv $CI_PROJECT_DIR/${PROJECT_NAME}-hw-out/schematic/*.pdf doc/hugo/static/files/
+    - mv $CI_PROJECT_DIR/${PROJECT_NAME}-hw-out/assembly/*.pdf doc/hugo/static/files/
+    - cd doc/hugo
+    - hugo --minify
+    - mv public $CI_PROJECT_DIR/
+  dependencies:
+    - build_hw
+  artifacts:
+    paths:
+      - public

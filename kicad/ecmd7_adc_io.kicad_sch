@@ -3389,6 +3389,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "SPI Pseudo Termination"
+		(exclude_from_sim no)
+		(at 247.65 222.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8d6f74b2-3580-43ef-b391-93c38a3a222e")
+	)
 	(text "BISS-C (RS422) Interface"
 		(exclude_from_sim no)
 		(at 322.072 169.672 0)
@@ -8621,7 +8631,7 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "105330b5-d993-42cb-ba0b-f486ca783ccc")
 		(property "Reference" "R53"
@@ -8633,7 +8643,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "4.7k"
 			(at 256.54 238.7599 0)
 			(effects
 				(font
@@ -10927,6 +10937,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "511-ESDA5V3L"
+			(at 63.5 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7a58920f-6fd8-4e2e-a147-f313cc8a938e")
 		)
@@ -12334,7 +12353,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 331.47 33.528 90)
 			(effects
 				(font
@@ -13479,7 +13498,7 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "69bc2cfd-c4ba-421d-b5ef-76def4417fd5")
 		(property "Reference" "R9"
@@ -13491,7 +13510,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "4.7k"
 			(at 243.84 238.7599 0)
 			(effects
 				(font
@@ -14178,6 +14197,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "511-ESDA5V3L"
+			(at 307.34 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1259d349-f865-40cd-9d57-a83f3f0ce167")
 		)
@@ -14781,7 +14809,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "4.7k"
 			(at 337.82 33.528 90)
 			(effects
 				(font
@@ -15672,7 +15700,7 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8f686e4b-9e2b-4536-b954-4d0f14388752")
 		(property "Reference" "R76"
@@ -15684,7 +15712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "4.7k"
 			(at 256.54 256.5399 0)
 			(effects
 				(font
@@ -16075,6 +16103,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "511-ESDA5V3L"
 			(at 63.5 68.58 0)
 			(effects
 				(font
@@ -16672,6 +16709,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 63.5 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "511-ESDA5V3L"
 			(at 63.5 125.73 0)
 			(effects
 				(font
@@ -17385,6 +17431,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 288.29 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "511-ESDA5V3L"
 			(at 288.29 213.36 0)
 			(effects
 				(font
@@ -19325,7 +19380,7 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d4838fad-6c7b-4192-8e16-a57fb704d085")
 		(property "Reference" "R49"
@@ -19337,7 +19392,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330"
+		(property "Value" "4.7k"
 			(at 243.84 256.5399 0)
 			(effects
 				(font

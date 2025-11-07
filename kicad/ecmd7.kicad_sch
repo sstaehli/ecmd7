@@ -9891,7 +9891,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 301.752 58.166 90)
 			(effects
 				(font
@@ -12158,7 +12158,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 301.752 94.996 90)
 			(effects
 				(font
@@ -12589,7 +12589,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 301.752 161.036 90)
 			(effects
 				(font
@@ -13301,6 +13301,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 245.11 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " 576-SMAJ60A"
 			(at 245.11 35.56 90)
 			(effects
 				(font
@@ -17483,7 +17492,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 301.752 42.926 90)
 			(effects
 				(font
@@ -18436,7 +18445,7 @@
 				)
 			)
 		)
-		(property "Value" "10"
+		(property "Value" "100m"
 			(at 300.99 177.546 90)
 			(effects
 				(font
@@ -19751,7 +19760,7 @@
 				)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "330"
 			(at 218.186 253.238 90)
 			(effects
 				(font
@@ -19893,7 +19902,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 301.752 110.236 90)
 			(effects
 				(font
