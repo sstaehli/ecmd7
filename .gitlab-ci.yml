@@ -10,10 +10,18 @@ build_hw:
   stage: build
   image: kicad/kicad:9.0   # Official KiCad Docker image with CLI tools
   variables:
-    kicad_cli: kicad-cli
     OUTPUT_DIR: "$CI_PROJECT_DIR/${PROJECT_NAME}-hw-out"
   script:
-    make -C kicad schematic_pdf
+    - echo "Generating documentation for $PROJECT_NAME..."
+    - mkdir -p $OUTPUT_DIR/schematic
+    - |
+      kicad-cli sch export pdf "$(PROJECT_NAME).kicad_sch" \
+        -o "$(OUTPUT_DIR)/schematic/$(PROJECT_NAME)_schematic.pdf"
+    - mkdir -p $OUTPUT_DIR/assembly
+    - |
+      kicad-cli pcb export pdf "$(PROJECT_NAME).kicad_pcb" \
+        --layers F.Fab,F.Paste \
+        -o "$(OUTPUT_DIR)/assembly/$(PROJECT_NAME)_assembly.pdf"
   artifacts:
     paths:
       - $OUTPUT_DIR/
