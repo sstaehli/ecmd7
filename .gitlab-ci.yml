@@ -35,7 +35,7 @@ pages:
     - mv "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf" doc/hugo/static/files/schematic.pdf
     - mv "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf" doc/hugo/static/files/assembly.pdf
     - cd doc/hugo
-    - hugo --minify
+    - hugo --baseURL $CI_PAGES_URL --minify
     - mv public $CI_PROJECT_DIR/
   dependencies:
     - build_hw
