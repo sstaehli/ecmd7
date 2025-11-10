@@ -630,6 +630,36 @@
       "+5VA": [
         "Analog"
       ],
+      "/ADC/I_U": [
+        "Analog"
+      ],
+      "/ADC/I_V": [
+        "Analog"
+      ],
+      "/ADC/I_W": [
+        "Analog"
+      ],
+      "/Power Stage/I_U": [
+        "Analog"
+      ],
+      "/Power Stage/I_V": [
+        "Analog"
+      ],
+      "/Power Stage/I_W": [
+        "Analog"
+      ],
+      "/Power Stage/U": [
+        "40A",
+        "60V"
+      ],
+      "/Power Stage/V": [
+        "40A",
+        "60V"
+      ],
+      "/Power Stage/W": [
+        "40A",
+        "60V"
+      ],
       "GNDA": [
         "Analog"
       ],
@@ -946,11 +976,19 @@
     ],
     [
       "98f24844-b8e7-48f1-8251-9b0fee32cc67",
-      "ADC+IO"
+      "ADC"
     ],
     [
       "da8b1e93-5d51-40db-83cb-e313b5e0b1d9",
       "Power Suppy"
+    ],
+    [
+      "a7326571-7388-4838-b36a-fcc3de78d956",
+      "Power Stage"
+    ],
+    [
+      "0818dd84-f306-47c1-9df0-8c7fc7e49c79",
+      "Sensors"
     ]
   ],
   "text_variables": {}
