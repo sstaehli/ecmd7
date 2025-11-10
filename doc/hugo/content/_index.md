@@ -2,7 +2,7 @@
 title: "Overview"
 ---
 
-This is the ECMD7 reference manual.
+This is the ECMD7 reference manual. The ECMD7 - Electronically Controlled Motor Driver - is a 500W, three-phase bridge for supply voltages from 10 to 60V.
 
 ![ECMD7 PCB](files/3d.png)
 

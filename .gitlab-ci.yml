@@ -40,9 +40,12 @@ build_hw:
       --rotate 0,0,0 \
       --zoom 1.2 \
       -o ${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png
+    - echo "Creating zip artifact ${PROJECT_NAME}-out.zip"
+    - zip -r "${PROJECT_NAME}-out.zip" "${OUTPUT_DIR}"
   artifacts:
     paths:
       - $OUTPUT_DIR/
+      - ${PROJECT_NAME}-out.zip
     expire_in: 1 week
 
 pages:
@@ -51,6 +54,8 @@ pages:
   script:
     - echo "Deploying documentation to GitLab Pages at $CI_PAGES_URL..."
     - mkdir -p doc/hugo/static/files/
+    # If build job produced a zip artifact, extract it so the files are available here.
+    - if [ -f "${PROJECT_NAME}-out.zip" ]; then echo "Unzipping artifact ${PROJECT_NAME}-out.zip" && unzip -o "${PROJECT_NAME}-out.zip"; fi
     - mv "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf" doc/hugo/static/files/schematic.pdf
     - mv "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf" doc/hugo/static/files/assembly.pdf
     - mv "${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png" doc/hugo/static/files/2d.png
