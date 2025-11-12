@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "795dc560-3405-44da-bfca-7db41c93a291")
 	(paper "A3")
+	(title_block
+		(title "ECMD7 Sensor Inputs")
+		(date "2025-11-12")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -1731,6 +1736,33 @@
 		(at 322.58 177.8)
 		(uuid "add9374d-5636-48dd-8ffc-854edfa7f18c")
 	)
+	(bus_entry
+		(at 292.1 175.26)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07945410-7eea-4b17-bd3f-0d37e98bdc8f")
+	)
+	(bus_entry
+		(at 292.1 172.72)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1169eaec-7516-43a4-aa07-bc5d64f39256")
+	)
+	(bus_entry
+		(at 292.1 180.34)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81d0d48f-cd37-4039-b6f0-3c79354ddee4")
+	)
 	(wire
 		(pts
 			(xy 101.6 128.27) (xy 125.73 128.27)
@@ -1760,6 +1792,26 @@
 			(type default)
 		)
 		(uuid "02ccebfd-a66d-4934-b2ff-423926f5a1bc")
+	)
+	(bus
+		(pts
+			(xy 292.1 172.72) (xy 289.56 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04826d1b-1bd0-487f-9fdb-275cde9916f0")
+	)
+	(wire
+		(pts
+			(xy 294.64 175.26) (xy 302.26 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04b8be19-563e-4783-848b-79993c46e127")
 	)
 	(wire
 		(pts
@@ -1880,6 +1932,16 @@
 			(type default)
 		)
 		(uuid "15650c1e-3a3d-487d-978d-705369080466")
+	)
+	(wire
+		(pts
+			(xy 294.64 177.8) (xy 302.26 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "178e6ee9-03bd-4035-a665-a222f9cedb9e")
 	)
 	(wire
 		(pts
@@ -2101,6 +2163,16 @@
 		)
 		(uuid "3648e392-eb99-4df5-b768-b99579427de4")
 	)
+	(bus
+		(pts
+			(xy 292.1 175.26) (xy 292.1 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3722e44e-ad3d-4106-a3cc-c805c8527085")
+	)
 	(wire
 		(pts
 			(xy 101.6 80.01) (xy 125.73 80.01)
@@ -2190,16 +2262,6 @@
 			(type default)
 		)
 		(uuid "42e81b24-df60-491b-9f9b-dd303454f5c2")
-	)
-	(wire
-		(pts
-			(xy 73.66 185.42) (xy 85.09 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44a39484-4210-421e-af79-867b3c8bf429")
 	)
 	(wire
 		(pts
@@ -2380,16 +2442,6 @@
 			(type default)
 		)
 		(uuid "540806e6-6bb2-48b3-ba2a-15f0b35675fa")
-	)
-	(wire
-		(pts
-			(xy 299.72 177.8) (xy 302.26 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "556cc28b-a21b-4f51-a661-ab30b2627084")
 	)
 	(wire
 		(pts
@@ -2673,6 +2725,26 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 185.42) (xy 85.09 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b6d85d5-ba2c-42b5-b8fb-eaa823484812")
+	)
+	(wire
+		(pts
+			(xy 82.55 175.26) (xy 85.09 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bec3836-c132-401f-8173-0c37f715763d")
+	)
+	(wire
+		(pts
 			(xy 181.61 95.25) (xy 194.31 95.25)
 		)
 		(stroke
@@ -2783,16 +2855,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 175.26) (xy 85.09 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93cd74de-9aec-4774-bcce-99c9e38f8a50")
-	)
-	(wire
-		(pts
 			(xy 163.83 137.16) (xy 160.02 137.16)
 		)
 		(stroke
@@ -2870,6 +2932,16 @@
 			(type default)
 		)
 		(uuid "9f80e6f8-f649-40e8-b294-559dc0be0b18")
+	)
+	(wire
+		(pts
+			(xy 294.64 182.88) (xy 302.26 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1ca21b0-cbc6-4569-a3bd-2bbd78566d49")
 	)
 	(wire
 		(pts
@@ -3031,6 +3103,16 @@
 		)
 		(uuid "c1beeaf2-63e3-4d8d-9a72-33a3dd85d616")
 	)
+	(bus
+		(pts
+			(xy 274.32 170.18) (xy 289.56 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6553a86-d0f4-4416-aa69-e4292e814004")
+	)
 	(wire
 		(pts
 			(xy 346.71 69.85) (xy 346.71 72.39)
@@ -3070,16 +3152,6 @@
 			(type default)
 		)
 		(uuid "c8abc67f-33e5-4daa-a789-d6458529e58d")
-	)
-	(wire
-		(pts
-			(xy 299.72 182.88) (xy 302.26 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8fbfc11-1501-4202-af02-009498dca4e1")
 	)
 	(wire
 		(pts
@@ -3223,16 +3295,6 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 175.26) (xy 302.26 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec040a1e-425a-46c4-815a-e7af056841dd")
-	)
-	(wire
-		(pts
 			(xy 144.78 128.27) (xy 156.21 128.27)
 		)
 		(stroke
@@ -3260,6 +3322,16 @@
 			(type default)
 		)
 		(uuid "f0177bac-1d5e-478e-a870-9d2e30c800bd")
+	)
+	(bus
+		(pts
+			(xy 292.1 172.72) (xy 292.1 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0c2a956-01e5-44f9-84c5-ac3e08e3e2d7")
 	)
 	(wire
 		(pts
@@ -3331,6 +3403,16 @@
 		)
 		(uuid "1957b9e1-e275-42b9-ac60-72b8f1d4804d")
 	)
+	(label "MISO"
+		(at 299.72 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "801bcdd8-ce81-49bd-8f3c-9c23321287fd")
+	)
 	(label "Z_LS_N"
 		(at 146.05 175.26 0)
 		(effects
@@ -3361,6 +3443,16 @@
 		)
 		(uuid "b2c9a399-2195-4198-a4e5-c79e6cd13eac")
 	)
+	(label "SCLK"
+		(at 299.72 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c7b68e68-91c0-469c-8aaf-d7ab1d87610f")
+	)
 	(label "B_LS_P"
 		(at 146.05 138.43 0)
 		(effects
@@ -3370,6 +3462,16 @@
 			(justify left bottom)
 		)
 		(uuid "d0c5cbaa-e1cb-477c-9bd8-3d5967f37b4b")
+	)
+	(label "~{CS3}"
+		(at 299.72 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e8ec6c10-b18d-48bb-bf82-4896c8e304b7")
 	)
 	(label "B_LS_N"
 		(at 146.05 128.27 0)
@@ -3414,27 +3516,16 @@
 		)
 		(uuid "3597d8a8-8e94-4ca7-aac1-9defe78a6255")
 	)
-	(hierarchical_label "SPI_SCK"
-		(shape input)
-		(at 299.72 175.26 180)
+	(hierarchical_label "{SPI_CTL}"
+		(shape bidirectional)
+		(at 274.32 170.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "45bf5384-dd3d-4f6b-9867-a572c26b8d1b")
-	)
-	(hierarchical_label "SPI_SDO"
-		(shape tri_state)
-		(at 299.72 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "55f2375a-100c-4995-994a-906afc108a22")
+		(uuid "3c097c3b-a1cd-40cb-a834-5e7d5f61546c")
 	)
 	(hierarchical_label "ENC_Z_P"
 		(shape input)
@@ -3567,17 +3658,6 @@
 			(justify left)
 		)
 		(uuid "b8e332cc-3cab-464d-94a1-4df93a38d261")
-	)
-	(hierarchical_label "~{CS_TMP}"
-		(shape input)
-		(at 299.72 182.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e0903d43-96fa-48f1-bb9b-62868329363b")
 	)
 	(symbol
 		(lib_id "power:+3.3V")

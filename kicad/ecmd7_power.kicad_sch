@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "1e7d72d7-983a-4e1b-bf09-a0af1aa281a3")
 	(paper "A3")
+	(title_block
+		(title "ECMD7 Power Supplies")
+		(date "2025-11-12")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
@@ -9954,7 +9959,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 				(hide yes)
 			)
