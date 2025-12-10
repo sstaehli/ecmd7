@@ -3933,7 +3933,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 68.58) (xy 304.8 66.04)
+			(xy 304.8 69.85) (xy 304.8 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6539,7 +6539,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "09ea4272-f644-44d7-846a-be3aeb9121bc")
 		(property "Reference" "#FLG01"
 			(at 304.8 59.055 0)
@@ -6551,7 +6550,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 304.8 55.88 0)
+			(at 304.546 56.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10797,7 +10796,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9bc57144-8714-4029-aab8-847f584dcb2a")
 		(property "Reference" "#PWR0218"
 			(at 167.64 85.09 0)
@@ -10809,7 +10807,7 @@
 			)
 		)
 		(property "Value" "GNDDRV"
-			(at 167.513 83.82 0)
+			(at 167.64 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11298,7 +11296,7 @@
 				)
 			)
 		)
-		(property "Value" "100m"
+		(property "Value" "10"
 			(at 236.22 213.106 90)
 			(effects
 				(font
@@ -11442,7 +11440,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ac9d1aaa-8b19-43d5-91be-4c7bd88e5e44")
 		(property "Reference" "#PWR035"
 			(at 147.32 86.36 0)
@@ -11454,7 +11451,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 85.09 0)
+			(at 147.32 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11928,7 +11925,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b92df494-9cd3-4563-b3db-8d23f1876ba0")
 		(property "Reference" "#PWR0148"
 			(at 180.34 85.09 0)
@@ -11940,7 +11936,7 @@
 			)
 		)
 		(property "Value" "GNDMOT"
-			(at 180.213 83.82 0)
+			(at 180.34 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12005,7 +12001,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 137.414 85.09 0)
+			(at 137.414 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12068,7 +12064,7 @@
 				)
 			)
 		)
-		(property "Value" "0.47"
+		(property "Value" "100m"
 			(at 236.982 181.356 90)
 			(effects
 				(font
@@ -13095,7 +13091,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dde4a312-7c3f-4ba0-840b-fc2c4882d912")
 		(property "Reference" "#PWR037"
 			(at 113.03 85.09 0)
@@ -13107,7 +13102,7 @@
 			)
 		)
 		(property "Value" "GNDDRV"
-			(at 112.903 83.82 0)
+			(at 112.776 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13240,7 +13235,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ed003140-38a7-45b7-9928-c1726d05a4ed")
 		(property "Reference" "#PWR010"
 			(at 124.46 85.09 0)
@@ -13252,7 +13246,7 @@
 			)
 		)
 		(property "Value" "GNDDRV"
-			(at 124.333 83.82 0)
+			(at 124.206 84.836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13525,7 +13519,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 304.8 68.58 180)
+		(at 304.8 69.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13534,7 +13528,7 @@
 		(fields_autoplaced yes)
 		(uuid "f94ef167-a8f2-4097-b6b0-52206e553445")
 		(property "Reference" "#FLG07"
-			(at 304.8 70.485 0)
+			(at 304.8 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13543,7 +13537,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 304.8 73.66 0)
+			(at 304.8 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13551,7 +13545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 304.8 68.58 0)
+			(at 304.8 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13560,7 +13554,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 68.58 0)
+			(at 304.8 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13569,7 +13563,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 304.8 68.58 0)
+			(at 304.8 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)

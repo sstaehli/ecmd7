@@ -1036,16 +1036,12 @@
       "Root"
     ],
     [
-      "98f24844-b8e7-48f1-8251-9b0fee32cc67",
-      "ADC"
-    ],
-    [
-      "da8b1e93-5d51-40db-83cb-e313b5e0b1d9",
-      "Power Suppy"
-    ],
-    [
       "a7326571-7388-4838-b36a-fcc3de78d956",
       "Power Stage"
+    ],
+    [
+      "98f24844-b8e7-48f1-8251-9b0fee32cc67",
+      "ADC"
     ],
     [
       "0818dd84-f306-47c1-9df0-8c7fc7e49c79",
@@ -1054,6 +1050,10 @@
     [
       "39ef440f-8f12-467c-8adf-7ddce0911f38",
       "Memory + CS Decoder"
+    ],
+    [
+      "da8b1e93-5d51-40db-83cb-e313b5e0b1d9",
+      "Power Suppy"
     ]
   ],
   "text_variables": {}
