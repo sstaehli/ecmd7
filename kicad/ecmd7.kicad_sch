@@ -2977,7 +2977,7 @@
 		)
 	)
 	(bus_alias "SPI_ADC"
-		(members "ADC.SCLK" "ADC.MISO" "ADC.MOSI[0..3]" "ADC.~{CS}")
+		(members "ADC.SCLK" "ADC.MOSI" "ADC.MISO[0..3]" "ADC.~{CS}")
 	)
 	(bus_alias "SPI_CTL"
 		(members "SCLK" "MOSI" "MISO" "~{CS[1..3]}" "CS[0..1]")
@@ -12499,7 +12499,7 @@
 		)
 		(uuid "ba298520-4fe6-4ec6-8603-1401c2fe0bce")
 	)
-	(label "ADC.MOSI0"
+	(label "ADC.MISO0"
 		(at 110.49 133.35 0)
 		(effects
 			(font
@@ -12539,7 +12539,7 @@
 		)
 		(uuid "cc7044b0-8475-4d3a-aa71-04a69bc93cc4")
 	)
-	(label "ADC.MOSI1"
+	(label "ADC.MISO1"
 		(at 92.71 133.35 180)
 		(effects
 			(font
@@ -12609,7 +12609,7 @@
 		)
 		(uuid "e58d3040-ac59-48db-84aa-d50b1940e265")
 	)
-	(label "ADC.MOSI2"
+	(label "ADC.MISO2"
 		(at 110.49 135.89 0)
 		(effects
 			(font
@@ -12659,7 +12659,7 @@
 		)
 		(uuid "e9b4688e-c520-42c2-831f-04bae45eaa5c")
 	)
-	(label "ADC.MOSI3"
+	(label "ADC.MISO3"
 		(at 92.71 135.89 180)
 		(effects
 			(font

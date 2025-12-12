@@ -3133,7 +3133,7 @@
 		)
 		(uuid "426ede51-3a4b-419c-8fd7-9b0bc279891f")
 	)
-	(label "ADC.MOSI2"
+	(label "ADC.MISO2"
 		(at 243.84 109.22 0)
 		(effects
 			(font
@@ -3143,7 +3143,7 @@
 		)
 		(uuid "460a2465-c3d8-4e33-a62c-c119a0fb413c")
 	)
-	(label "ADC.MOSI3"
+	(label "ADC.MISO3"
 		(at 243.84 111.76 0)
 		(effects
 			(font
@@ -3153,7 +3153,7 @@
 		)
 		(uuid "605dbc29-85b8-4e62-b79a-37ca80ca7b49")
 	)
-	(label "ADC.MOSI0"
+	(label "ADC.MISO0"
 		(at 243.84 104.14 0)
 		(effects
 			(font
@@ -3163,7 +3163,7 @@
 		)
 		(uuid "7060bc54-7298-4095-9753-f6d05a7d8507")
 	)
-	(label "ADC.MOSI1"
+	(label "ADC.MISO1"
 		(at 243.84 106.68 0)
 		(effects
 			(font
