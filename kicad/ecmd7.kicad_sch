@@ -13597,8 +13597,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 200.66 49.53 90)
-		(mirror x)
+		(at 203.2 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13606,7 +13605,7 @@
 		(dnp no)
 		(uuid "560b4d92-cb14-449e-9775-c0f8c90fea6e")
 		(property "Reference" "J4"
-			(at 201.676 47.498 90)
+			(at 202.184 47.498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13614,7 +13613,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 198.12 50.165 0)
+			(at 205.74 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13623,7 +13622,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical"
-			(at 200.66 49.53 0)
+			(at 203.2 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13632,7 +13631,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 49.53 0)
+			(at 203.2 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13641,7 +13640,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 200.66 49.53 0)
+			(at 203.2 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13650,7 +13649,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 200.66 49.53 0)
+			(at 203.2 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
