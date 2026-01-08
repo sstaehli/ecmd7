@@ -17,6 +17,7 @@ jobs:
     
     container:
       image: kicad/kicad:9.0-full
+      options: --user root
     
     steps:
       - name: Checkout
