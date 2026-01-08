@@ -11,11 +11,6 @@ env:
   PROJECT_NAME: ecmd7
   OUTPUT_DIR: ecmd7-out
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build:
     name: Build Hardware Files
@@ -102,7 +97,7 @@ jobs:
           hugo --minify
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: doc/hugo/public
   
@@ -110,11 +105,17 @@ jobs:
     name: Deploy Hugo site
     needs: pages
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+  
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
