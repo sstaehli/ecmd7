@@ -1,0 +1,171 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  PROJECT_NAME: ecmd7
+  OUTPUT_DIR: ecmd7-out
+
+jobs:
+  build_hw:stages:
+  - build
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  PROJECT_NAME: "ecmd7"
+  OUTPUT_DIR: "${PROJECT_NAME}-out"
+
+build_hw:
+  stage: build
+  image: kicad/kicad:9.0-full   # Official KiCad Docker image with CLI tools and 3D data
+  variables:
+  script:
+    - echo "Generating documentation for ${PROJECT_NAME}..."
+    - mkdir -p "${OUTPUT_DIR}/schematic"
+    - |
+      kicad-cli sch export pdf "kicad/${PROJECT_NAME}.kicad_sch" \
+        -o "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf"
+    - mkdir -p "${OUTPUT_DIR}/assembly"
+    - |
+      kicad-cli pcb export pdf "kicad/${PROJECT_NAME}.kicad_pcb" \
+        --layers F.Fab,F.Paste \
+        -o "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf"
+    - echo "Generating 3D image for ${PROJECT_NAME}..."
+    - mkdir -p "${OUTPUT_DIR}/render"
+    - |
+      kicad-cli pcb render "kicad/${PROJECT_NAME}.kicad_pcb" \
+      --width 1920 --height 1080 \
+      --background transparent \
+      --perspective \
+      --rotate 315,0,350 \
+      --pan 0,1,0 \
+      --zoom 1.2 \
+      -o ${OUTPUT_DIR}/render/${PROJECT_NAME}_3d.png
+    - |
+      kicad-cli pcb render "kicad/${PROJECT_NAME}.kicad_pcb" \
+      --width 1920 --height 1080 \
+      --background transparent \
+      --rotate 0,0,0 \
+      --zoom 1.2 \
+      -o ${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png
+    - echo "Creating zip artifact ${PROJECT_NAME}-out.zip"
+    - zip -r "${PROJECT_NAME}-out.zip" "${OUTPUT_DIR}"
+  artifacts:
+    paths:
+      - $OUTPUT_DIR/
+      - ${PROJECT_NAME}-out.zip
+    expire_in: 1 week
+
+pages:
+  image: registry.gitlab.com/pages/hugo:latest
+  stage: deploy
+  script:
+    - echo "Deploying documentation to GitLab Pages at $CI_PAGES_URL..."
+    - mkdir -p doc/hugo/static/files/
+    # If build job produced a zip artifact, extract it so the files are available here.
+    - if [ -f "${PROJECT_NAME}-out.zip" ]; then echo "Unzipping artifact ${PROJECT_NAME}-out.zip" && unzip -o "${PROJECT_NAME}-out.zip"; fi
+    - mv "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf" doc/hugo/static/files/schematic.pdf
+    - mv "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf" doc/hugo/static/files/assembly.pdf
+    - mv "${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png" doc/hugo/static/files/2d.png
+    - mv "${OUTPUT_DIR}/render/${PROJECT_NAME}_3d.png" doc/hugo/static/files/3d.png
+    - cd doc/hugo
+    - hugo --minify --baseURL ${CI_PAGES_URL}
+    - mv public $CI_PROJECT_DIR/
+  dependencies:
+    - build_hw
+  artifacts:
+    paths:
+      - public
+    name: Build hardware docs
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:9.0-full
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Generate KiCad exports
+        run: |
+          echo "Generating documentation for ${PROJECT_NAME}..."
+          mkdir -p "${OUTPUT_DIR}/schematic"
+          kicad-cli sch export pdf "kicad/${PROJECT_NAME}.kicad_sch" \
+            -o "${OUTPUT_DIR}/schematic/${PROJECT_NAME}_schematic.pdf"
+          mkdir -p "${OUTPUT_DIR}/assembly"
+          kicad-cli pcb export pdf "kicad/${PROJECT_NAME}.kicad_pcb" \
+            --layers F.Fab,F.Paste \
+            -o "${OUTPUT_DIR}/assembly/${PROJECT_NAME}_assembly.pdf"
+          echo "Generating 3D image for ${PROJECT_NAME}..."
+          mkdir -p "${OUTPUT_DIR}/render"
+          kicad-cli pcb render "kicad/${PROJECT_NAME}.kicad_pcb" \
+            --width 1920 --height 1080 \
+            --background transparent \
+            --perspective \
+            --rotate 315,0,350 \
+            --pan 0,1,0 \
+            --zoom 1.2 \
+            -o ${OUTPUT_DIR}/render/${PROJECT_NAME}_3d.png
+          kicad-cli pcb render "kicad/${PROJECT_NAME}.kicad_pcb" \
+            --width 1920 --height 1080 \
+            --background transparent \
+            --rotate 0,0,0 \
+            --zoom 1.2 \
+            -o ${OUTPUT_DIR}/render/${PROJECT_NAME}_2d.png
+          echo "Creating zip artifact ${PROJECT_NAME}-out.zip"
+          zip -r "${PROJECT_NAME}-out.zip" "${OUTPUT_DIR}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecmd7-out
+          path: |
+            ${OUTPUT_DIR}
+            ${PROJECT_NAME}-out.zip
+
+  pages:
+    name: Build & deploy Hugo site
+    needs: build_hw
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ecmd7-out
+          path: .
+
+      - name: Prepare Hugo static files
+        run: |
+          mkdir -p doc/hugo/static/files/
+          if [ -f "${{ env.PROJECT_NAME }}-out.zip" ]; then unzip -o "${{ env.PROJECT_NAME }}-out.zip"; fi
+          mv "${{ env.OUTPUT_DIR }}/schematic/${{ env.PROJECT_NAME }}_schematic.pdf" doc/hugo/static/files/schematic.pdf || true
+          mv "${{ env.OUTPUT_DIR }}/assembly/${{ env.PROJECT_NAME }}_assembly.pdf" doc/hugo/static/files/assembly.pdf || true
+          mv "${{ env.OUTPUT_DIR }}/render/${{ env.PROJECT_NAME }}_2d.png" doc/hugo/static/files/2d.png || true
+          mv "${{ env.OUTPUT_DIR }}/render/${{ env.PROJECT_NAME }}_3d.png" doc/hugo/static/files/3d.png || true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'
+
+      - name: Build site
+        run: |
+          cd doc/hugo
+          hugo --minify
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: doc/hugo/public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
