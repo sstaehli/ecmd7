@@ -11,8 +11,14 @@ env:
   PROJECT_NAME: ecmd7
   OUTPUT_DIR: ecmd7-out
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
+    name: Build Hardware Files
     runs-on: ubuntu-latest
     
     container:
@@ -63,7 +69,7 @@ jobs:
             ${{ env.PROJECT_NAME }}-out.zip
 
   pages:
-    name: Build & deploy Hugo site
+    name: Deploy Hugo site
     needs: build
     runs-on: ubuntu-latest
     steps:
