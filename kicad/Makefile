@@ -2,8 +2,8 @@ PROJECT_NAME?=ecmd7
 OUTPUT_DIR?=../$(PROJECT_NAME)-out
 HUGO_DIR?=../doc/hugo/static/files
 
-kicad?="C:\Program Files\KiCad\9.0\bin\kicad.exe"
-kicad-cli?="C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
+kicad?="kicad"
+kicad-cli?="kicad-cli"
 
 SHELL:=bash
 
