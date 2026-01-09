@@ -3,7 +3,7 @@
   {{ partial "head.html" . }}
   <body>
     <header>
-      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> | {{ .Title }}</h1>
+      <h1><a href="{{ .Site.BaseURL  | relURL }}">{{ .Site.Title }}</a> | {{ .Title }}</h1>
     </header>
 
     <div class="content-grid">
