@@ -5,7 +5,7 @@
     {{/* List all regular pages in the site except section index files (_index.md) */}}
     {{ range .Site.RegularPages.ByWeight }}
       {{ if ne .File.BaseFileName "_index" }}
-        <li><a href="{{ .RelPermalink  | relURL }}">{{ .Title }}</a></li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     {{ end }}
   </ul>

@@ -94,8 +94,7 @@ jobs:
       - name: Build site
         run: |
           cd doc/hugo
-          echo "$CI_PAGES_URL"
-          hugo --baseURL="$CI_PAGES_URL"/ --minify
+          hugo --baseURL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" --minify
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
