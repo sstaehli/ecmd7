@@ -4,6 +4,8 @@ title: "Overview"
 
 This is the ECMD7 reference manual. The ECMD7 - Electronically Controlled Motor Driver - is a 500W, three-phase bridge for supply voltages from 10 to 60V.
 
+Check sources on [gitlab.airhead.ch](https://gitlab.airhead.ch/products/arnimatic/ecmd7) or [GitHub](https://github.com/sstaehli/ecmd7) 
+
 ![ECMD7 PCB](files/3d.png)
 
 The drive card provides a power stage with high qualitiy features to drive a 3-phase motor from typical car lead or RC style lithium batteries for educational and development purposes. The PCB provides the required frontend to an external controller at a common logic level.
