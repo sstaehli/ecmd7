@@ -28,6 +28,16 @@ jobs:
 
       - name: Generate KiCad exports
         run: |
+          echo "generating Gerber files for ${PROJECT_NAME}..."
+          mkdir -p "${OUTPUT_DIR}/gerbers"
+          kicad-cli pcb export gerbers "kicad/${PROJECT_NAME}.kicad_pcb" \
+            --format GerberX2 \
+            --units mm \
+            --output "${OUTPUT_DIR}/gerbers"
+          kicad-cli pcb export drill "kicad/${PROJECT_NAME}.kicad_pcb" \
+            --format Excellon \
+            --units mm \
+            --output "${OUTPUT_DIR}/gerbers"
           echo "Generating documentation for ${PROJECT_NAME}..."
           mkdir -p "${OUTPUT_DIR}/schematic"
           kicad-cli sch export pdf "kicad/${PROJECT_NAME}.kicad_sch" \
@@ -63,8 +73,15 @@ jobs:
             ${{ env.OUTPUT_DIR }}
             ${{ env.PROJECT_NAME }}-out.zip
 
+      - name: Release zip package
+        uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          files: ${{ env.PROJECT_NAME }}-out.zip
+
   pages:
     name: Build Hugo site
+    if: github.ref_type == 'tag'
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -103,6 +120,7 @@ jobs:
   
   deploy:
     name: Deploy Hugo site
+    if: github.ref_type == 'tag'
     needs: pages
     runs-on: ubuntu-latest
 
