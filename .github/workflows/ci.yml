@@ -31,13 +31,9 @@ jobs:
           echo "generating Gerber files for ${PROJECT_NAME}..."
           mkdir -p "${OUTPUT_DIR}/gerbers"
           kicad-cli pcb export gerbers "kicad/${PROJECT_NAME}.kicad_pcb" \
-            --format GerberX2 \
-            --units mm \
-            --output "${OUTPUT_DIR}/gerbers"
+            -o "${OUTPUT_DIR}/gerbers"
           kicad-cli pcb export drill "kicad/${PROJECT_NAME}.kicad_pcb" \
-            --format Excellon \
-            --units mm \
-            --output "${OUTPUT_DIR}/gerbers"
+            -o "${OUTPUT_DIR}/gerbers"
           echo "Generating documentation for ${PROJECT_NAME}..."
           mkdir -p "${OUTPUT_DIR}/schematic"
           kicad-cli sch export pdf "kicad/${PROJECT_NAME}.kicad_sch" \

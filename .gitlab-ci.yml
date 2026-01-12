@@ -12,6 +12,14 @@ build_hw:
   image: kicad/kicad:9.0-full   # Official KiCad Docker image with CLI tools and 3D data
   variables:
   script:
+    - echo "generating Gerber files for ${PROJECT_NAME}..."
+    - mkdir -p "${OUTPUT_DIR}/gerbers"
+    - |
+      kicad-cli pcb export gerbers "kicad/${PROJECT_NAME}.kicad_pcb" \
+        -o "${OUTPUT_DIR}/gerbers"
+    - |
+      kicad-cli pcb export drill "kicad/${PROJECT_NAME}.kicad_pcb" \
+        -o "${OUTPUT_DIR}/gerbers"
     - echo "Generating documentation for ${PROJECT_NAME}..."
     - mkdir -p "${OUTPUT_DIR}/schematic"
     - |
